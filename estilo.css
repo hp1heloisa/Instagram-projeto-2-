@@ -1,0 +1,484 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin-top: 54px;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu {
+  height: 54px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.menumobile {
+  display: none;
+}
+.container {
+  width: 935px;
+  display: flex;
+  justify-content: space-between;
+}
+.esquerda {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ion-icon {
+  width: 22px;
+  height: 22px;
+}
+.divisao {
+  height: 22px;
+  border: 1px solid #dbdbdb;
+  margin-right: 10px;
+  margin-left: 11px;
+}
+.logo {
+  width: 90px;
+}
+.pesquisa {
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  color: #979797;
+  font-weight: 400;
+  line-height: 14px;
+  font-size: 12px;
+  width: 215px;
+  height: 28px;
+  border-radius: 3px;
+  text-align: center;
+}
+.direita {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 163px;
+}
+.tudo {
+  display: flex;
+  width: 935px;
+  justify-content: space-between;
+}
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.stories {
+  overflow: scroll;
+  width: 614px;
+  height: 118px;
+  margin-top: 34px;
+  margin-bottom: 24px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.psto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1px;
+}
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 10px;
+  margin-right: 8px;
+  margin-left: 8px;
+  color: #262626;
+}
+.principal p {
+  margin-top: 1px;
+}
+.psto img:nth-child(1) {
+  height: 56px;
+  width: 56px;
+  border-radius: 28px;
+  position: absolute;
+  z-index: 2;
+}
+.psto img:nth-child(2) {
+  height: 66px;
+  width: 66px;
+  z-index: 1;
+}
+.seta {
+  width: 26px;
+  height: 26px;
+  color: #ffffff;
+  border-radius: 13px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  position: absolute;
+  right: 8px;
+  top: 80px;
+  z-index: 5;
+}
+.post {
+  box-sizing: content-box;
+  margin-bottom: 60px;
+  width: 614px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+.post img {
+  width: 614px;
+}
+video {
+  width: 100%;
+}
+.dono {
+  height: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 17px;
+  padding-right: 19px;
+}
+.dono img {
+  border-radius: 16px;
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+.perfil {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+  color: #262626;
+  line-height: 16px;
+  align-items: center;
+}
+.interacao {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+  margin-top: 12px;
+}
+.left {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.curtidas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 18px;
+}
+.likes {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 13px;
+}
+.likes p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+.likes img {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.geral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.comentario {
+  font-size: 14px;
+  color: #8e8e8e;
+  margin-bottom: 8px;
+  margin-top: 13px;
+}
+.coment {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+.n {
+  font-weight: 500;
+}
+.coment p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.coment ion-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 17px;
+}
+.public {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+input {
+  margin-left: 0px;
+  padding-left: 0px;
+  width: 100%;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  color: #8e8e8e;
+  font-family: "Roboto";
+}
+button {
+  color: #b2dffc;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  background: none;
+  font-family: "Roboto";
+}
+button:hover {
+  color: #0095f6;
+  transition: 300ms;
+}
+.sidebar {
+  margin-top: 57px;
+  width: 293px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  position: fixed;
+  left: 829px;
+}
+.eu {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.eu img {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  margin-right: 17px;
+}
+
+.eu p:nth-child(1) {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #262626;
+}
+.eu p:nth-child(2) {
+  font-size: 14px;
+  color: #8e8e8e;
+  margin-top: 5px;
+}
+.sugestoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
+.sugestoes p:nth-child(1) {
+  color: #8e8e8e;
+}
+.sugestoes p:nth-child(2) {
+  color: #262626;
+}
+.sugeridos img {
+  height: 32px;
+  width: 32px;
+  border-radius: 16px;
+  margin-right: 11px;
+}
+.vai {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.prof {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nome p:nth-child(1) {
+  font-weight: 500;
+  font-size: 14px;
+  color: #262626;
+  margin-bottom: 1px;
+}
+.nome p:nth-child(2) {
+  font-weight: 400;
+  font-size: 12px;
+  color: #8e8e8e;
+  margin-top: 1px;
+}
+.seguir {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #139ef2;
+}
+.cinza {
+  margin-top: 17px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #c7c7c7;
+}
+.barra {
+  display: none;
+}
+img:hover {
+  cursor: pointer;
+}
+ion-icon:hover {
+  cursor: pointer;
+  color: #8e8e8e;
+}
+p:hover {
+  cursor: pointer;
+}
+.seguir:hover {
+  color: #262626;
+}
+.sugestoes p:nth-child(2):hover {
+  color: #8e8e8e;
+}
+.dono p:hover {
+  color: #8e8e8e;
+}
+@media (max-width: 935px) {
+  .sidebar {
+    display: none;
+  }
+  .tudo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 614px) {
+  .body {
+    margin-bottom: 54px;
+  }
+  .menu {
+    display: none;
+  }
+  .menumobile {
+    display: inline;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+  .stories {
+    width: 100%;
+    height: 121px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    background-color: none;
+    border: none;
+    box-shadow: none;
+  }
+  .pesquisa {
+    display: none;
+  }
+  .seta {
+    display: none;
+  }
+  .barra {
+    display: inline;
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+  }
+  .tudo {
+    width: 100%;
+  }
+  .conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .post {
+    width: 100%;
+  }
+  .post img {
+    width: 100%;
+  }
+  .dono img {
+    border-radius: 100%;
+  }
+  .perfil {
+    width: 10%;
+  }
+  .likes img {
+    border-radius: 100%;
+    width: 5%;
+  }
+}
