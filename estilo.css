@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #e5e5e5;
 }
 .menu {
   height: 54px;
@@ -51,14 +52,21 @@ ion-icon {
 .pesquisa {
   background-color: #fafafa;
   border: 1px solid #dbdbdb;
-  color: #979797;
   font-weight: 400;
+  color: #979797;
   line-height: 14px;
   font-size: 12px;
   width: 215px;
   height: 28px;
   border-radius: 3px;
   text-align: center;
+}
+.pesquisa::placeholder{ /* aqui conseguimos configurar o testinho que está dentro do input*/
+  color: #979797;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 14px;
+  font-size: 12px; 
 }
 .direita {
   display: flex;
@@ -81,7 +89,7 @@ ion-icon {
   overflow: scroll;
   width: 614px;
   height: 118px;
-  margin-top: 34px;
+  margin-top: 34px;/imagens/bruce.jpeg
   margin-bottom: 24px;
   border-radius: 3px;
   display: flex;
@@ -140,6 +148,7 @@ ion-icon {
   z-index: 5;
 }
 .post {
+  background-color: #ffffff;
   box-sizing: content-box;
   margin-bottom: 60px;
   width: 614px;
