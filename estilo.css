@@ -220,6 +220,12 @@ video {
   margin-bottom: 8px;
   margin-top: 13px;
 }
+.legenda {
+  margin-top: 13px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
 .coment {
   display: flex;
   width: 100%;
