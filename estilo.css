@@ -97,7 +97,8 @@ ion-icon {
   align-items: center;
   background-color: #ffffff;
   border: 1px solid #dbdbdb;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  /*o primeiro px é referente a movimentação no eixo x, a segunda em relação ao eixo y e a terceira em relação ao esfumaçado da sombra*/
 }
 ::-webkit-scrollbar {
   display: none;
